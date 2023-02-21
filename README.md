@@ -48,7 +48,7 @@ The datasets used by our experiments are in the `data/` folder, including FEW-CO
 
 
 ### Quickstart
-Our code will be open-sourced soon. You can use Few-COMM in your experiments. The data format of FEW-COMM is the same as that of FEW-NERD, so you can use the data loading pipeline for [FEW-NERD](https://ningding97.github.io/fewnerd/). Currently, the benchmarks on the FEW-COMM dataset are as follows:
+Our code will be open-sourced soon. You can use Few-COMM in your experiments. The data format of FEW-COMM is the same as that of FEW-NERD, so you can use the DataLoader in [FEW-NERD](https://ningding97.github.io/fewnerd/). Currently, the benchmarks on the FEW-COMM dataset are as follows:
 
 | FEW-COMM | 5-way 1-shot | 5-way 5-shot | 10-way 1-shot | 10-way 5-shot |
 | ---| ---| ---| ---| ---|
