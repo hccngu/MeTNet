@@ -39,6 +39,8 @@ The datasets used by our experiments are in the `data/` folder, including FEW-CO
 |  -->
 
 **FEW-COMM** is a Chinese few-shot NER dataset we released, which consists of 66,165 product description texts that merchants display on a large e-commerce platform, including 140,936 entities and 92 pre-defined entity types. These entity types are various commodity attributes that are manually defined by domain experts, such as "material", "color" and "origin". Please see Appendix C of our paper for more details on the dataset.
+
+<img src="pic/dataset.png" width="80%">
 <!-- | FewNERD ([link](https://ningding97.github.io/fewnerd/)) | Processed data available. |
 | WNUT17 ([link](https://aclanthology.org/W17-4418.pdf)) | We used a subset of the product review data. Processed data available. |
 | Restaurant ([link](http://people.csail.mit.edu/jrg/2013/liu-icassp13.pdf)) | Processed data available. | 
@@ -46,7 +48,7 @@ The datasets used by our experiments are in the `data/` folder, including FEW-CO
 
 
 ### Quickstart
-Our code will be open-sourced soon. You can use our dataset Few-COMM for relevant experiments. The data format of FEW-COMM is the same as that of FEW-NERD, so you can use the data loading pipeline for [FEW-NERD](https://ningding97.github.io/fewnerd/). Currently, the benchmarks on the FEW-COMM dataset are as follows:
+Our code will be open-sourced soon. You can use Few-COMM in your experiments. The data format of FEW-COMM is the same as that of FEW-NERD, so you can use the data loading pipeline for [FEW-NERD](https://ningding97.github.io/fewnerd/). Currently, the benchmarks on the FEW-COMM dataset are as follows:
 
 | FEW-COMM | 5-way 1-shot | 5-way 5-shot | 10-way 1-shot | 10-way 5-shot |
 | ---| ---| ---| ---| ---|
