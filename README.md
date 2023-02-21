@@ -1,4 +1,4 @@
-# Meta-Learning Adversarial Domain Adaptation Network for Few-Shot Text Classification
+# Meta-Learning Triplet Network with Adaptive Margins for Few-Shot Named Entity Recognition
 
 This repository contains the code and data for our paper:
 
