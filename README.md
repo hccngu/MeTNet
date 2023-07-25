@@ -47,8 +47,57 @@ The datasets used by our experiments are in the `data/` folder, including FEW-CO
 | Multiwoz ([link](https://arxiv.org/pdf/1810.00278)) | Processed data available. |  -->
 
 
+## Setup
+
+This implemetation is based on Python3.7. To run the code, you need the following dependencies:
+
+- nltk>=3.6.4
+- numpy==1.21.0
+- pandas==1.3.5
+- torch==1.7.1
+- transformers==4.0.1
+- apex==0.9.10dev
+- scikit_learn==0.24.1
+- seqeval
+
+You can simply run
+
+```Sh
+pip install -r requirements.txt
+```
+
+## Repository structure
+
+We select some important files for detailed description.
+
+```Shell
+|-- data # experiments for five datasets
+    |-- Few-COMM/ # a Chinese few-shot NER dataset we released
+|-- model # includes all model implementations
+|-- transformer_model # includes BERT pre-trained checkpoints
+	|--bert-base-chinese
+	|--bert-base-uncased
+|-- utils
+    |-- config.py # configuration
+    |-- data_loader.py # load data
+    |-- fewshotsampler.py # construst meta-tasks
+    |-- framework.py # includes train\eval\test procedure
+    |-- tripletloss.py # an improved triplet loss
+|-- main.py
+|-- run.sh
+```
+
 ### Quickstart
-Our code will be open-sourced soon. You can use Few-COMM in your experiments. The data format of FEW-COMM is the same as that of FEW-NERD, so you can use the DataLoader in [FEW-NERD](https://ningding97.github.io/fewnerd/). Currently, the benchmarks on the FEW-COMM dataset are as follows:
+
+1. Unzip our processed data file `data.zip` and put the data files under `data/` folder.
+
+2. Please download pretrained BERT files [bert-base-chinese](https://huggingface.co/bert-base-chinese/tree/main) and [bert-base-uncased](https://huggingface.co/bert-base-uncased/tree/main) and put them under `transformer_model/` folder.
+
+3. ```sh run.sh```
+
+   You can also adjust the model by modifying the parameters in the `run.sh` file.
+
+Currently, the benchmarks on the FEW-COMM dataset are as follows:
 
 | FEW-COMM | 5-way 1-shot | 5-way 5-shot | 10-way 1-shot | 10-way 5-shot |
 | ---| ---| ---| ---| ---|
@@ -64,6 +113,7 @@ Our code will be open-sourced soon. You can use Few-COMM in your experiments. Th
 
 If you have the latest experimental results on the FEW-COMM dataset, please contact us to update the benchmark.
 
+For the [FewNERD](https://github.com/thunlp/Few-NERD) dataset, please download it from its official website.
 
 <!-- After you have finished configuring the `data/` folder and the `pretrain_wordvec/` folder, you can run our model with the following commands. 
 ```
@@ -72,7 +122,7 @@ sh mlada.sh
 ```
 You can also adjust the model by modifying the parameters in the `malada.sh` file. -->
 
-### Dependencies
+<!-- ### Dependencies
 - Python 3.8
 - nltk>=3.6.4
 - numpy==1.21.0
@@ -81,7 +131,7 @@ You can also adjust the model by modifying the parameters in the `malada.sh` fil
 - transformers==4.0.1
 - apex==0.9.10dev
 - scikit_learn==0.24.1
-- seqeval
+- seqeval -->
 <!-- - Python 3.7
 - PyTorch 1.6.0
 - numpy 1.18.5

@@ -1,0 +1,1 @@
+Download pretrained BERT files [bert-base-chinese](https://huggingface.co/bert-base-chinese/tree/main) and [bert-base-uncased](https://huggingface.co/bert-base-uncased/tree/main) and put them here.
